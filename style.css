@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.phone{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: rgb(0, 110, 255);
+    position: relative;
+    margin: 60px auto 0 auto ;
+    animation: big 0.5s linear infinite;
+    animation-direction: alternate;
+}
+.phone-icon{
+    color: black;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes big{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.25);
+    }
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    background-color: orange;
+    margin: 200px auto 0 auto ;
+    border-radius: 10px;
+    animation: big 0.3125s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes bigText{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.25);
+    }
+}
+.text-del{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    width: 140px;
+    height: 30px;
+    border-right:3px solid white;
+    animation: delete 2.5s linear infinite;
+    overflow: hidden;
+}
+@keyframes delete{
+    0%{
+        width: 140px;
+    }
+    12.5%{
+        width: 0px;
+    }
+    25%{
+        width: 140px;
+    }
+    100%{
+        width: 140px;
+    }
+}
